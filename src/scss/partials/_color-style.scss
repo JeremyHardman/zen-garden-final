@@ -7,3 +7,32 @@ $color-4: #000000; /*/ Black accent*/
 $color-5: #43802a; /*/ accent green*/
 $success: #00a3e0; /* Light Blue Pantone 299 */
 $alert: #e03c31; /* Light red Pantone 179 */
+*a {
+  color: $color-5;
+  &:hover {
+    color: $color-1;
+    text-shadow: 2px 2px 5px $color-3;
+  }
+  &:visited {
+    color: $color-4;
+  }
+}
+p {
+  color: $color-3;
+  a {
+    &:hover {
+      color: $success;
+    }
+  }
+}
+body {
+  background-color: $color-2;
+}
+h1,
+h2,
+h3 {
+  color: $color-5;
+}
+h3 {
+  background-color: $color-4;
+}
