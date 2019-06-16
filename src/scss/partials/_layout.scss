@@ -1,79 +1,59 @@
-// breakpoints
+@media (max-width: 900px) {
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-$S: 768px;
-$M: 1024px;
-$L: 1600px;
-
-// Variables
-$page-width: $S;
-$page-height: $page-width * 1.4;
-$font-size-number: $page-width * 0.1;
-$icon-size: $page-width / 5;
-$rows: 14;
-$row-height: $page-height / $rows;
-$columns: 3;
-$columns-width: $page-width / $columns;
-//grid variables
-$num-columns: $columns;
-$one-column: 100% / $num-columns;
-$loop-start: 1;
-$loop-end: $num-columns + 1;
-
-// media queries
-
-// mixins
-@mixin col($span-num) {
-  flex: 0 0 $one-column * $span-num;
-}
-@mixin offset($offset-num) {
-  margin-left: $one-column * $offset-num;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.page-wrapper {
-  width: $page-width;
-  height: $page-height;
-  margin: 20px;
-}
-.intro {
-  display: grid;
-  grid-template-columns: repeat($columns, $columns-width);
-  grid-template-rows: repeat($rows, $row-height);
-  justify-items: start;
-  align-items: start;
-
-  .summary {
+  .page-wrapper {
+    display: grid;
+    height: auto;
+    margin: 100px;
+    section {
+      grid-template-columns: repeat(3, 30%);
+      justify-items: start;
+      align-items: start;
+    }
+  }
+  .intro > header {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-row-gap: 1em;
+    h1 {
+      grid-column: 1 / 4;
+      width: 100%;
+      font-size: -webkit-xxx-large;
+      padding: 0;
+      text-align: center;
+    }
+    h2 {
+      grid-column: 1 / 4;
+      width: 100%;
+      font-size: -webkit-large;
+      padding: 0;
+      text-align: center;
+    }
+  }
+  p {
     grid-column: 2 / 4;
     grid-row: 2/3;
+    padding: 1em;
+    margin: auto;
+    text-align: left;
   }
-}
+  h1,
+  h2,
+  h3 {
+    padding: 1em;
+    grid-column: 1/2;
+  }
 
-@mixin MQ($canvas) {
-  @if $canvas == S {
-    @media only screen and (min-width: $S) {
-      @content;
-    }
-  } @else if $canvas == M {
-    @media only screen and (min-width: $M) {
-      @content;
-    }
-  } @else if $canvas == L {
-    @media only screen and (min-width: $L) {
-      @content;
+  @media (min-width: 901px) {
+    .intro > header {
+      display: grid;
+      grid-template-columns: repeat(5, 20%);
     }
   }
-}
-
-// super light grid - it works with the .cd-container class inside style.scss
-
-@mixin column($percentage, $float-direction: left) {
-  width: 100% * $percentage;
-  float: $float-direction;
 }

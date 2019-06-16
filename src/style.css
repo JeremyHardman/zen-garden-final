@@ -135,32 +135,67 @@ table {
   border-spacing: 0;
 }
 
-*,
+@media (max-width: 700px) {
+  *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-.page-wrapper {
-  width: 768px;
-  height: 1075.2px;
-  margin: 20px;
-}
+  .page-wrapper {
+    display: grid;
+    height: auto;
+    margin: 100px;
+  }
+  .page-wrapper section {
+    grid-template-columns: repeat(3, 30%);
+    justify-items: start;
+    align-items: start;
+  }
 
-.intro {
-  display: grid;
-  grid-template-columns: repeat(3, 256px);
-  grid-template-rows: repeat(14, 76.8px);
-  justify-items: start;
-  align-items: start;
-}
-.intro .summary {
-  grid-column: 2/4;
-  grid-row: 2/3;
-}
+  .intro > header {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-row-gap: 1em;
+  }
+  .intro > header h1 {
+    grid-column: 1/4;
+    width: 100%;
+    font-size: -webkit-xxx-large;
+    padding: 0;
+    text-align: center;
+  }
+  .intro > header h2 {
+    grid-column: 1/4;
+    width: 100%;
+    font-size: -webkit-large;
+    padding: 0;
+    text-align: center;
+  }
 
+  p {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding: 1em;
+    margin: auto;
+    text-align: left;
+  }
+
+  h1,
+h2,
+h3 {
+    padding: 1em;
+    grid-column: 1/2;
+  }
+}
+@media (min-width: 701px) {
+  .intro > header {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+  }
+}
 /* color palette - these colors will be the color swatches of the Colors section */
 /*/ Blue Pantone 294*/
 /*/ Dark Grey*/
@@ -294,18 +329,6 @@ body .sidebar li a {
   border-color: #4e4d4f;
   font-weight: bold;
   padding: 2px;
-}
-@media only screen and (min-width: 1024px) {
-  body .sidebar li a {
-    color: #a7a6a8;
-  }
-  body .sidebar li a.selected {
-    color: #43802a;
-    box-shadow: 0 2px 0 #003478;
-  }
-  body .sidebar li a:hover {
-    color: #43802a;
-  }
 }
 
 .design-archives span {
