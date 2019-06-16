@@ -135,6 +135,32 @@ table {
   border-spacing: 0;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  width: 768px;
+  height: 1075.2px;
+  margin: 20px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(3, 256px);
+  grid-template-rows: repeat(14, 76.8px);
+  justify-items: start;
+  align-items: start;
+}
+.intro .summary {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
 /* color palette - these colors will be the color swatches of the Colors section */
 /*/ Blue Pantone 294*/
 /*/ Dark Grey*/
