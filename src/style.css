@@ -135,7 +135,7 @@ table {
   border-spacing: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   *,
 *:before,
 *:after {
@@ -157,7 +157,7 @@ table {
 
   .intro > header {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 1em;
   }
   .intro > header h1 {
@@ -189,8 +189,13 @@ h3 {
     padding: 1em;
     grid-column: 1/2;
   }
+
+  h3 {
+    margin-right: 15em;
+    text-align: right;
+  }
 }
-@media (min-width: 701px) {
+@media (max-width: 900px) and (min-width: 901px) {
   .intro > header {
     display: grid;
     grid-template-columns: repeat(5, 20%);
