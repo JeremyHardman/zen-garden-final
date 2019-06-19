@@ -8,6 +8,24 @@
 @import 'partials/nav-style';
 @import 'partials/typography';
 
+
+@media all and (min-width: 50em) column{
+    float: left;
+    width: 50%;
+}
+
+/* break-points */
+
+$bp-small:  24em;
+$bp-small-2: 29.75em;
+$bp-small-3: 39.8em;
+$bp-med: 46.8em;
+$bp-med-2: 48em;
+$bp-large: 50em;
+$bp-large-2: 54.em;
+$bp-xl: 60em;
+$bp-xl: 73em;
+
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
@@ -37,16 +55,8 @@ $bp-large-2: 54.em;
 $bp-xl: 60em;
 $bp-xl: 73em;
 
-
-
-
-// I pulled the following css from the zen garden css starter file.  
-
+// I pulled this css from the zen garden css starter file.  
 // We can move it to a partial file and use it for a reference - AJ
-
-
-
-//-------------------------------------------------------
 
 /* basic elements */
 // html {
