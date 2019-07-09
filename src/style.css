@@ -8,12 +8,14 @@
     padding: 0;
   }
 
-  .main {
+  .main,
+.preamble {
     margin: 5vmin;
     border-top: 0.25em solid black;
   }
 
-  .explanation,
+  .preamble,
+.explanation,
 .participation,
 .benefits,
 .requirements,
@@ -23,7 +25,8 @@ footer {
     grid-auto-rows: min-content;
     grid-gap: 1vmin;
   }
-  .explanation h3,
+  .preamble h3,
+.explanation h3,
 .participation h3,
 .benefits h3,
 .requirements h3,
@@ -36,7 +39,8 @@ footer h3 {
     margin-top: 1em;
     font-variant-caps: all-small-caps;
   }
-  .explanation p,
+  .preamble p,
+.explanation p,
 .participation p,
 .benefits p,
 .requirements p,
