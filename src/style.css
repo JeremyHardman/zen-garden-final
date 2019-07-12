@@ -332,13 +332,11 @@ p a {
   grid-column-gap: 0.02%;
 }
 .intro > header h1 {
-  background: red;
-  grid-column: 2/6;
+  grid-column: 1/6;
   justify-items: start;
   grid-column-start: 2;
   grid-column-end: 6;
   width: 100%;
-  font-size: -webkit-xxx-large;
   text-align: start;
 }
 .intro > header h2 {
@@ -355,19 +353,7 @@ p a {
   grid-row: 2/3;
   padding: 1em;
   margin: auto;
-  text-align: left;
-}
-
-.page-wrapper {
-  background-image: url("/src/assets/images/zen_garden_page_wrapper.png");
-  background-color: #43802a;
-  /* Used if the image is unavailable */
-  height: 900px;
-  /* You must set a specified height */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
