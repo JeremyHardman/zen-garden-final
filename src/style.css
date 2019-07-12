@@ -45,6 +45,7 @@ h3 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #414042;
 }
 
 .main,
@@ -167,25 +168,52 @@ h3 {
 }
 
 /*Image variables */
-.cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #003478;
-  border-radius: 3px;
-  background: #000000;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 6px;
+/* color palette - these colors will be the color swatches of the Colors section */
+/*/ Blue Pantone 294*/
+/*/ Dark Grey*/
+/*/ Off-white*/
+/*/ Black accent*/
+/*/ accent green*/
+/* Light Blue Pantone 299 */
+/* Light red Pantone 179 */
+* a {
+  color: #43802a;
+}
+* a:hover {
+  color: #003478;
+  text-shadow: 2px 2px 5px #f7f7f7;
+}
+* a:visited {
+  color: #000000;
+}
+
+p {
+  color: #f7f7f7;
+}
+p a:hover {
+  color: #00a3e0;
+}
+
+body {
+  background-color: #414042;
+}
+
+h1,
+h2,
+h3 {
+  color: #43802a;
+}
+
+h3 {
+  background-color: #000000;
 }
 
 .page-wrapper {
-  background-image: url("../../assets/images/zen_garden_page_wrapper.png");
-  background-color: #43802a;
+  background-image: url("../src/assets/images/zen_garden_page_wrapper-mobile.jpg");
+  background-color: yellow;
   /* Used if the image is unavailable */
-  height: 900px;
-  /* You must set a specified height */
   background-repeat: no-repeat;
   /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
 }
 
 /* aeronautics graphics/icons*/
@@ -328,11 +356,11 @@ p a {
 .intro > header {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 0.02%;
 }
-.intro > header h1 {
+.intro > header intro h1 {
   grid-column: 1/6;
+  grid-row-start: 3;
   justify-items: start;
   grid-column-start: 2;
   grid-column-end: 6;

@@ -1,12 +1,12 @@
 .intro > header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
     grid-column-gap: 0.02%;
 
-    h1 {
+intro h1 {
         
         grid-column: 1 / 6;
+        grid-row-start: 3;
         justify-items: start;
         grid-column-start: 2;
         grid-column-end: 6;
@@ -31,20 +31,4 @@ text-align: start;
     }
 }
 
-// h1,
-// h2,
-// h3 {
-//   padding: 1em;
-//   grid-column: 1/2;
-// }
-// h3 {
-//   margin-right: 15em;
-//   text-align: right;
-// }
-// @media (min-width: 901px) {
-//   .intro > header {
-//     display: grid;
-//     grid-template-columns: repeat(5, 20%);
-//   }
-// }
 
