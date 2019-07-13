@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-    background-color: $color-2;
+  background-color: $color-2;
 }
 .main,
 .preamble {
@@ -65,4 +65,13 @@ footer {
     border-top: 0.2em solid $color-5;
     padding-top: 0.5em;
   }
+}
+#css-zen-garden::after {
+  content: url('/src/assets/images/headerShape.svg');
+  z-index: 105;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: 0;
+  width: 100%;
 }

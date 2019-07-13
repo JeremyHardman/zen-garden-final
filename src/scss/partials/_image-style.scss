@@ -9,14 +9,23 @@
 //  box-shadow: 0 1px 1px rgba(#000, 0.05);
 //  padding: 6px;
 //}
-.page-wrapper { 
-    background-image: url('../src/assets/images/zen_garden_page_wrapper-mobile.jpg');
-    background-color: yellow;
-    /* Used if the image is unavailable */
+.page-wrapper > header {
+  background-image: url('/src/assets/images/zen_garden_page_wrapper-mobile.jpg');
+  background-color: yellow;
+  /* Used if the image is unavailable */
 
-    // background-position: center; /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
- 
+  // background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
 }
 
+// top banner that is green and white
+#css-zen-garden::after {
+  content: url('/src/assets/images/headerShape.svg');
+  z-index: 105;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: 0;
+  width: 100%;
+}
