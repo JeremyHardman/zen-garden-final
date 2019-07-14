@@ -39,7 +39,14 @@ footer {
     margin-top: 1em;
   }
 }
-
+.intro {
+  margin-top: 5rem;
+}
+@media only screen and (min-width: 550px) {
+  .intro {
+    margin-top: 10rem;
+  }
+}
 @media only screen and (min-width: 768px) {
   .preamble,
   .explanation,
@@ -65,9 +72,12 @@ footer {
     border-top: 0.2em solid $color-5;
     padding-top: 0.5em;
   }
+  .intro {
+    margin-top: 25rem;
+  }
 }
 #css-zen-garden::after {
-  content: url('/src/assets/images/headerShape.svg');
+  background-image: url('/src/assets/images/Asset 1.png');
   z-index: 105;
   position: fixed;
   top: 0;

@@ -20,8 +20,8 @@
 }
 
 // top banner that is green and white
-#css-zen-garden::after {
-  content: url('/src/assets/images/headerShape.svg');
+#css-zen-garden::before {
+  content: url('/src/assets/images/arch-outline-design.svg');
   z-index: 105;
   position: fixed;
   top: 0;
