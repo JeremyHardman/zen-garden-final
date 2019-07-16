@@ -9,14 +9,20 @@
 //  box-shadow: 0 1px 1px rgba(#000, 0.05);
 //  padding: 6px;
 //}
-.page-wrapper { 
-    background-image: url('../src/assets/images/zen_garden_page_wrapper-mobile.jpg');
-    background-color: yellow;
+.page-wrapper {
+    background: purple;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: min-content;
+    grid-column-gap: 0.02%;
+    z-index: 1;
+    background-image: url('../src/assets/images/zen_garden_page_wrapper-mobile.png');
+
+
     /* Used if the image is unavailable */
 
     // background-position: center; /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
- 
-}
 
+}

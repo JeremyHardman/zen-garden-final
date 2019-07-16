@@ -39,15 +39,6 @@ h3 {
   background-color: #000000;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #414042;
-}
-
 .main,
 .preamble {
   margin: 5vmin;
@@ -209,8 +200,13 @@ h3 {
 }
 
 .page-wrapper {
-  background-image: url("../src/assets/images/zen_garden_page_wrapper-mobile.jpg");
-  background-color: yellow;
+  background: purple;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: min-content;
+  grid-column-gap: 0.02%;
+  z-index: 1;
+  background-image: url("../src/assets/images/zen_garden_page_wrapper-mobile.png");
   /* Used if the image is unavailable */
   background-repeat: no-repeat;
   /* Do not repeat the image */
@@ -356,18 +352,32 @@ p a {
 .intro > header {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: min-content;
   grid-column-gap: 0.02%;
+  z-index: 3;
 }
-.intro > header intro h1 {
-  grid-column: 1/6;
-  grid-row-start: 3;
+.intro > header h1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: min-content;
+  grid-column-gap: 0.02%;
+  z-index: 4;
+  height: 200px;
+  grid-column: 2/6;
+  grid-row: 3/5;
   justify-items: start;
-  grid-column-start: 2;
-  grid-column-end: 6;
   width: 100%;
   text-align: start;
+  z-index: 4;
 }
 .intro > header h2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: min-content;
+  grid-column-gap: 0.02%;
+  z-index: 10;
+  height: 200px;
+  grid-row: 5/6;
   grid-column: 2/6;
   justify-items: start;
   text-align: center;
@@ -375,13 +385,6 @@ p a {
   font-size: -webkit-large;
   padding: 0;
   text-align: center;
-}
-.intro > header p {
-  grid-column: 2/4;
-  grid-row: 2/3;
-  padding: 1em;
-  margin: auto;
-  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
