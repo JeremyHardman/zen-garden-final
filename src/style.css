@@ -140,9 +140,9 @@ footer p {
     margin-top: 25rem;
   }
 }
-#css-zen-garden::after {
-  background-image: url("/src/assets/images/Asset 1.png");
-  z-index: 105;
+#zen-intro::before {
+  content: url("/src/assets/images/Asset 1.png");
+  z-index: 155;
   position: fixed;
   top: 0;
   left: 0;
