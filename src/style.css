@@ -90,6 +90,15 @@ footer p {
   margin-top: 1em;
 }
 
+.intro {
+  margin-top: 5rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .intro {
+    margin-top: 10rem;
+  }
+}
 @media only screen and (min-width: 768px) {
   .preamble,
 .explanation,
@@ -126,7 +135,21 @@ footer p {
     border-top: 0.2em solid #43802a;
     padding-top: 0.5em;
   }
+
+  .intro {
+    margin-top: 25rem;
+  }
 }
+#css-zen-garden::after {
+  background-image: url("/src/assets/images/Asset 1.png");
+  z-index: 105;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: 0;
+  width: 100%;
+}
+
 /* color palette - these colors will be the color swatches of the Colors section */
 /*/ Blue Pantone 294*/
 /*/ Dark Grey*/
@@ -208,12 +231,22 @@ h3 {
   background-color: #000000;
 }
 
-.page-wrapper {
-  background-image: url("../src/assets/images/zen_garden_page_wrapper-mobile.jpg");
+.page-wrapper > header {
+  background-image: url("/src/assets/images/zen_garden_page_wrapper-mobile.jpg");
   background-color: yellow;
   /* Used if the image is unavailable */
   background-repeat: no-repeat;
   /* Do not repeat the image */
+}
+
+#css-zen-garden::before {
+  content: url("/src/assets/images/arch-outline-design.svg");
+  z-index: 105;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: 0;
+  width: 100%;
 }
 
 /* aeronautics graphics/icons*/

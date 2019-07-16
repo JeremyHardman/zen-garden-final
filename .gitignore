@@ -1,3 +1,7 @@
 /node_modules/
 node_modules
 .cache
+src/style.css
+src/style.css
+src/style.css.map
+src/style.css.map
