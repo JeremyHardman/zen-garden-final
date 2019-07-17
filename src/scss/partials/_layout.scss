@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: $color-2;
+  background-color: transparent;
 }
 .main,
 .preamble {
@@ -53,7 +53,8 @@ footer {
   .participation,
   .benefits,
   .requirements,
-  footer {
+  footer,
+  .summary {
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
     h3 {
@@ -73,19 +74,19 @@ footer {
     padding-top: 0.5em;
   }
   .intro {
-    margin-top: 25rem;
+    margin-top: 6rem;
   }
 }
 // #zen-intro {
 //   width: 200px;
 // }
 
-#zen-intro::before {
-  content: url('/src/assets/images/Asset 1.png');
-  z-index: 155;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: 0;
-  width: 100%;
-}
+// #zen-intro::before {
+//   content: url('/src/assets/images/Asset 1.png');
+//   z-index: 155;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background: 0;
+//   width: 100%;
+// }
