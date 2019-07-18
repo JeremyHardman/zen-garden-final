@@ -105,8 +105,7 @@ footer p {
 .participation,
 .benefits,
 .requirements,
-footer,
-.summary {
+footer {
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
   }
@@ -115,8 +114,7 @@ footer,
 .participation h3,
 .benefits h3,
 .requirements h3,
-footer h3,
-.summary h3 {
+footer h3 {
     grid-column: 4/8;
     height: fit-content;
     text-align: right;
@@ -128,8 +126,7 @@ footer h3,
 .participation p,
 .benefits p,
 .requirements p,
-footer p,
-.summary p {
+footer p {
     grid-column: 8/13;
   }
 
@@ -224,14 +221,6 @@ h3 {
   background-color: #000000;
 }
 
-.page-wrapper > header {
-  background-image: url("/src/assets/images/zen_garden_page_wrapper-mobile.jpg");
-  background-color: yellow;
-  /* Used if the image is unavailable */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-}
-
 #css-zen-garden::before {
   content: url("/src/assets/images/ZenGarden-header.svg");
   z-index: 105;
@@ -243,17 +232,22 @@ h3 {
 }
 
 html::before {
-  content: url("/src/assets/images/zen_garden_page_wrapper-large.png");
+  content: url(/src/assets/images/zen_garden_page_wrapper-large.png);
   z-index: -1;
   position: fixed;
-  top: 0;
+  top: 0px;
   right: 0;
   background: 0;
   background-color: #414042;
-  width: -webkit-fill-available;
-  padding: 10vmax 0 0 32vmax;
+  padding: 4vmax 0 0 6vmax;
 }
 
+@media only screen and (min-width: 768px) {
+  html::before {
+    width: -webkit-fill-available;
+    padding: 8vmax 0 0 32vmax;
+  }
+}
 /* aeronautics graphics/icons*/
 /*fighterplane */
 /*/ fighter jet */
@@ -389,6 +383,33 @@ p {
 }
 p a {
   text-decoration: none;
+  font-weight: bold;
+}
+
+#zen-intro > header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+#zen-intro > header h1 {
+  margin: 35px auto;
+  grid-column: 2/7;
+  font-size: 2.7rem;
+  text-align: center;
+  border-top: 4px solid black;
+}
+#zen-intro > header h2 {
+  grid-column: 2/6;
+  color: #000000;
+  padding-top: 1rem;
+}
+
+div.summary {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+p {
+  grid-column: 2/7;
 }
 
 @media only screen and (min-width: 768px) {
@@ -404,9 +425,9 @@ p a {
   .intro > header h2 {
     grid-column: 8/12;
     justify-items: start;
-    color: #000000;
   }
-  .intro > header p {
+
+  .summary > p {
     grid-column: 2/12;
     margin-right: 100px;
   }

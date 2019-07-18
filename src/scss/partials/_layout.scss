@@ -53,8 +53,7 @@ footer {
   .participation,
   .benefits,
   .requirements,
-  footer,
-  .summary {
+  footer {
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
     h3 {
