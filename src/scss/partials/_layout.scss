@@ -1,45 +1,5 @@
 @import '../partials/color-style.scss';
 @import '../partials/icons';
-@media only screen and (min-width: 550px) {
-  .intro {
-    margin-top: 10rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .preamble,
-  .explanation,
-  .participation,
-  .benefits,
-  .requirements,
-  footer {
-    display: inline-grid;
-    grid-template-columns: repeat(12, 1fr);
-    h3 {
-      grid-column: 4 / 8;
-      height: fit-content;
-      text-align: right;
-      padding: 0.5em;
-      margin-right: 1em;
-    }
-    p {
-      grid-column: 8 / 13;
-    }
-  }
-  #zen-preamble > p:nth-child(2),
-  .main > div > p:nth-child(2) {
-    border-top: 0.2em solid $color-5;
-    padding-top: 0.5em;
-  }
-  .intro {
-    margin-top: 6rem;
-  }
-  #zen-supporting > footer {
-    grid-template-columns: repeat(12, 1fr);
-    a {
-      width: 30%;
-    }
-  }
-}
 
 *,
 *:before,
@@ -96,7 +56,7 @@ footer {
   a {
     color: black;
     padding: 10px;
-    width: 75%;
+    height: 50px;
     justify-self: center;
   }
   .zen-validate-html {
@@ -115,6 +75,10 @@ footer {
     content: $icon-space-shuttle;
   }
 }
+body .sidebar {
+  margin-bottom: 20px;
+  background-color: transparent;
+}
 aside.sidebar .wrapper {
   display: inline-grid;
   grid-template-columns: repeat(6, 1fr);
@@ -123,7 +87,6 @@ aside.sidebar .wrapper {
   grid-auto-flow: row;
   margin: 10px 10px 70px 10px;
   background-color: transparent;
-
   div {
     grid-column: span 2;
     color: $color-4;
