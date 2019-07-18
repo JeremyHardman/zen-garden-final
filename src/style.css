@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* color palette - these colors will be the color swatches of the Colors section */
 /*/ Blue Pantone 294*/
 /*/ Dark Grey*/
@@ -7,22 +6,30 @@
 /*/ accent green*/
 /* Light Blue Pantone 299 */
 /* Light red Pantone 179 */
-* a {
+* a,
+abbr {
   color: #43802a;
+  text-shadow: 1px 1px 0.5px #000000;
 }
-* a:hover {
-  color: #003478;
+* a:hover,
+abbr:hover {
+  color: #00a3e0;
   text-shadow: 2px 2px 5px #f7f7f7;
 }
-* a:visited {
+* a:visited,
+abbr:visited {
   color: #000000;
 }
 
 p {
   color: #f7f7f7;
+  text-shadow: 1px 1px 10.5px #000000;
+  transition: font-size 1s;
 }
-p a:hover {
+p a:hover,
+p abbr:hover {
   color: #00a3e0;
+  font-size: large;
 }
 
 body {
@@ -39,6 +46,13 @@ h3 {
   background-color: #000000;
 }
 
+/* aeronautics graphics/icons*/
+/*fighterplane */
+/*/ fighter jet */
+/*/ helicopter*/
+/*/ missile */
+/*/ space shuttle */
+/* test */
 *,
 *:before,
 *:after {
@@ -139,7 +153,82 @@ footer p {
   .intro {
     margin-top: 6rem;
   }
+
+  #zen-supporting > footer > a {
+    width: 30%;
+  }
 }
+#zen-supporting > footer {
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #43802a;
+  margin: 19px 0 0 0;
+  width: -webkit-fill-available;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#zen-supporting > footer a {
+  color: black;
+  padding: 10px;
+  width: 75%;
+  justify-self: center;
+}
+#zen-supporting > footer .zen-validate-html {
+  content: url("/src/assets/icons/icons8-fighter50.png");
+}
+#zen-supporting > footer .zen-validate-css {
+  content: url("/src/assets/icons/icons8-fighter-jet50.png");
+}
+#zen-supporting > footer .zen-license {
+  content: url("/src/assets/icons/icons8-helicopter.png");
+}
+#zen-supporting > footer .zen-accessibility {
+  content: url("/src/assets/icons/icons8-missile.png");
+}
+#zen-supporting > footer .zen-github {
+  content: url("/src/assets/icons/icons8-space-shuttle.png");
+}
+
+aside.sidebar .wrapper {
+  display: inline-grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: min-content;
+  grid-gap: 1vmin;
+  grid-auto-flow: row;
+  margin: 10px 10px 70px 10px;
+  background-color: transparent;
+}
+aside.sidebar .wrapper div {
+  grid-column: span 2;
+  color: #000000;
+}
+aside.sidebar .wrapper div ul {
+  list-style: none;
+}
+aside.sidebar .wrapper div li {
+  margin-top: 5px;
+  text-decoration: none;
+  transition: font-size 1s;
+}
+aside.sidebar .wrapper div li a {
+  text-decoration: none;
+  color: #000000;
+}
+aside.sidebar .wrapper div li :hover {
+  font-size: large;
+  color: #00a3e0;
+}
+aside.sidebar .wrapper div h3 {
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-variant-caps: small-caps;
+}
+
+.next {
+  display: none;
+}
+
 /* color palette - these colors will be the color swatches of the Colors section */
 /*/ Blue Pantone 294*/
 /*/ Dark Grey*/
@@ -148,22 +237,30 @@ footer p {
 /*/ accent green*/
 /* Light Blue Pantone 299 */
 /* Light red Pantone 179 */
-* a {
+* a,
+abbr {
   color: #43802a;
+  text-shadow: 1px 1px 0.5px #000000;
 }
-* a:hover {
-  color: #003478;
+* a:hover,
+abbr:hover {
+  color: #00a3e0;
   text-shadow: 2px 2px 5px #f7f7f7;
 }
-* a:visited {
+* a:visited,
+abbr:visited {
   color: #000000;
 }
 
 p {
   color: #f7f7f7;
+  text-shadow: 1px 1px 10.5px #000000;
+  transition: font-size 1s;
 }
-p a:hover {
+p a:hover,
+p abbr:hover {
   color: #00a3e0;
+  font-size: large;
 }
 
 body {
@@ -189,22 +286,30 @@ h3 {
 /*/ accent green*/
 /* Light Blue Pantone 299 */
 /* Light red Pantone 179 */
-* a {
+* a,
+abbr {
   color: #43802a;
+  text-shadow: 1px 1px 0.5px #000000;
 }
-* a:hover {
-  color: #003478;
+* a:hover,
+abbr:hover {
+  color: #00a3e0;
   text-shadow: 2px 2px 5px #f7f7f7;
 }
-* a:visited {
+* a:visited,
+abbr:visited {
   color: #000000;
 }
 
 p {
   color: #f7f7f7;
+  text-shadow: 1px 1px 10.5px #000000;
+  transition: font-size 1s;
 }
-p a:hover {
+p a:hover,
+p abbr:hover {
   color: #00a3e0;
+  font-size: large;
 }
 
 body {
@@ -255,34 +360,6 @@ html::before {
 /*/ missile */
 /*/ space shuttle */
 /* test */
-/* CSS class name icon */
-#icons.cd-icons .cd-icon-1 {
-  background-image: url("../../src/assets/icons/icons8-fighter50.png");
-}
-#icons.cd-icons .cd-icon-2 {
-  background-image: url("../../src/assets/icons/icons8-fighter-jet50.png");
-}
-#icons.cd-icons .cd-icon-3 {
-  background-image: url("../../src/assets/icons/icons8-helicopter.png");
-}
-#icons.cd-icons .cd-icon-4 {
-  background-image: url("../../src/assets/icons/icons8-missile.png");
-}
-#icons.cd-icons .cd-icon-5 {
-  background-image: url("../../src/assets/icons/icons8-space-shuttle.png");
-}
-
-.fa-fighter-jet:before {
-  content: "";
-}
-
-.cd-icons li {
-  /* icons size */
-  height: 80px;
-  width: 80px;
-  color: #414042;
-}
-
 /* color palette - these colors will be the color swatches of the Colors section */
 /*/ Blue Pantone 294*/
 /*/ Dark Grey*/
@@ -291,22 +368,30 @@ html::before {
 /*/ accent green*/
 /* Light Blue Pantone 299 */
 /* Light red Pantone 179 */
-* a {
+* a,
+abbr {
   color: #43802a;
+  text-shadow: 1px 1px 0.5px #000000;
 }
-* a:hover {
-  color: #003478;
+* a:hover,
+abbr:hover {
+  color: #00a3e0;
   text-shadow: 2px 2px 5px #f7f7f7;
 }
-* a:visited {
+* a:visited,
+abbr:visited {
   color: #000000;
 }
 
 p {
   color: #f7f7f7;
+  text-shadow: 1px 1px 10.5px #000000;
+  transition: font-size 1s;
 }
-p a:hover {
+p a:hover,
+p abbr:hover {
   color: #00a3e0;
+  font-size: large;
 }
 
 body {
@@ -326,11 +411,12 @@ h3 {
 body .sidebar {
   /* main navigation background color - full screen on small devices */
   background-color: #414042;
-}
-body .sidebar li a {
-  border-color: #4e4d4f;
-  font-weight: bold;
-  padding: 2px;
+  /* li a {
+    // color: $color-4;
+    border-color: lighten($color-2, 5%);
+    font-weight: bold;
+    padding: 2px;
+  } */
 }
 
 .design-archives span {

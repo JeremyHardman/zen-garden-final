@@ -4,12 +4,12 @@ body .sidebar {
   /* main navigation background color - full screen on small devices */
   background-color: $color-2;
 
-  li a {
+  /* li a {
     // color: $color-4;
     border-color: lighten($color-2, 5%);
     font-weight: bold;
     padding: 2px;
-  }
+  } */
 
   //   @include MQ(M) {
   //     li a {
