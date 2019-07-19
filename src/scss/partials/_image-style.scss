@@ -10,7 +10,7 @@
 //  padding: 6px;
 //}
 // .page-wrapper > header {
-//   background-image: url('/src/assets/images/zen_garden_page_wrapper-mobile.jpg');
+//   background-image: url('./assets/images/zen_garden_page_wrapper-mobile.jpg');
 //   background-color: yellow;
 //   /* Used if the image is unavailable */
 
@@ -20,7 +20,7 @@
 // }
 
 #css-zen-garden::before {
-  content: url('/src/assets/images/ZenGarden-header.svg');
+  content: url('./assets/images/ZenGarden-header.svg');
   z-index: 105;
   position: fixed;
   top: 0;
@@ -29,7 +29,7 @@
   width: 100%;
 }
 html::before {
-  content: url(/src/assets/images/zen_garden_page_wrapper-large.png);
+  content: url(./assets/images/zen_garden_page_wrapper-large.png);
   z-index: -1;
   position: fixed;
   top: 0px;
@@ -42,23 +42,23 @@ html::before {
 // top banner that is green and white
 
 @media only screen and (min-width: 768px) {
-  // #css-zen-garden::before {
-  //   content: url('/src/assets/images/ZenGarden-header.svg');
-  //   z-index: 105;
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   background: 0;
-  //   width: 100%;
-  // }
+  #css-zen-garden::before {
+    content: url('./assets/images/ZenGarden-header.svg');
+    z-index: 105;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: 0;
+    width: 100%;
+  }
   html::before {
-    // content: url('/src/assets/images/zen_garden_page_wrapper-large.png');
-    // z-index: -1;
-    // position: fixed;
-    // top: 0;
-    // right: 0;
-    // background: 0;
-    // background-color: $color-2;
+    content: url('./assets/images/zen_garden_page_wrapper-large.png');
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: 0;
+    background-color: $color-2;
     width: -webkit-fill-available;
     padding: 8vmax 0 0 32vmax;
   }
