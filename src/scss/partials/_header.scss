@@ -1,34 +1,65 @@
-.intro > header {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 0.02%;
-
-intro h1 {
-        
-        grid-column: 1 / 6;
-        grid-row-start: 3;
-        justify-items: start;
-        grid-column-start: 2;
-        grid-column-end: 6;
-        width: 100%;
-text-align: start;
-    }
-    h2 {
-        grid-column: 2 / 6;
-        justify-items: start;
-        text-align: center;
-        width: 100%;
-        font-size: -webkit-large;
-        padding: 0;
-        text-align: center;
-    }
-    p {
-        grid-column: 2 / 4;
-        grid-row: 2/3;
-        padding: 1em;
-        margin: auto;
-        text-align: right;
-    }
+#zen-intro > header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  h1 {
+    // grid-column: 2/6;
+    // font-size: 2.2rem;
+    // text-align: end;
+    margin: 35px auto;
+    grid-column: 2/7;
+    font-size: 2.7rem;
+    text-align: center;
+    border-top: 4px solid black;
+  }
+  h2 {
+    grid-column: 2/6;
+    // text-align: end;
+    color: $color-4;
+    padding-top: 1rem;
+  }
+}
+div.summary {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+p {
+  grid-column: 2 / 7;
 }
 
+@media only screen and (min-width: 768px) {
+  .intro > header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0.02%;
+    h1 {
+      grid-column: 8/12;
+      font-size: 3.5em;
+      //         justify-items: start;
+      //         grid-column-start: 2;
+      //         grid-column-end: 6;
+      //         width: 100%;
+      // text-align: start;
+    }
+    h2 {
+      grid-column: 8/12;
+      justify-items: start;
 
+      // grid-column: 2 / 6;
+      // justify-items: start;
+      // text-align: center;
+      // width: 100%;
+      // font-size: -webkit-large;
+      // padding: 0;
+      // text-align: center;
+    }
+  }
+
+  .summary > p {
+    grid-column: 2 / 12;
+    // grid-row: 2/3;
+    // padding: 1em;
+    // margin: auto;
+    // text-align: right;
+    margin-right: 100px;
+  }
+}

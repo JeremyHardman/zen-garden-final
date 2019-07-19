@@ -7,10 +7,12 @@ $color-4: #000000; /*/ Black accent*/
 $color-5: #43802a; /*/ accent green*/
 $success: #00a3e0; /* Light Blue Pantone 299 */
 $alert: #e03c31; /* Light red Pantone 179 */
-*a {
+*a,
+abbr {
   color: $color-5;
+  text-shadow: 1px 1px 0.5px $color-4;
   &:hover {
-    color: $color-1;
+    color: $success;
     text-shadow: 2px 2px 5px $color-3;
   }
   &:visited {
@@ -19,14 +21,18 @@ $alert: #e03c31; /* Light red Pantone 179 */
 }
 p {
   color: $color-3;
-  a {
+  text-shadow: 1px 1px 10.5px $color-4;
+  transition: font-size 1s;
+  a,
+  abbr {
     &:hover {
       color: $success;
+      font-size: large;
     }
   }
 }
 body {
-  background-color: $color-2;
+  background-color: transparent;
 }
 h1,
 h2,
