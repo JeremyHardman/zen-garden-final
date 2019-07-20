@@ -1,0 +1,610 @@
+@charset "UTF-8";
+/* color palette - these colors will be the color swatches of the Colors section */
+/*/ Blue Pantone 294*/
+/*/ Dark Grey*/
+/*/ Off-white*/
+/*/ Black accent*/
+/*/ accent green*/
+/* Light Blue Pantone 299 */
+/* Light red Pantone 179 */
+* a,
+abbr {
+  color: #43802a;
+  text-shadow: 1px 1px 0.5px #000000;
+}
+* a:hover,
+abbr:hover {
+  color: #00a3e0;
+  text-shadow: 2px 2px 5px #f7f7f7;
+}
+* a:visited,
+abbr:visited {
+  color: #000000;
+}
+
+p {
+  color: #f7f7f7;
+  text-shadow: 1px 1px 10.5px #000000;
+  transition: font-size 1s;
+}
+p a:hover,
+p abbr:hover {
+  color: #00a3e0;
+  font-size: large;
+}
+
+body {
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+  color: #43802a;
+}
+
+h3 {
+  background-color: #000000;
+}
+
+/* aeronautics graphics/icons*/
+/*fighterplane */
+/*/ fighter jet */
+/*/ helicopter*/
+/*/ missile */
+/*/ space shuttle */
+/* test */
+/* CSS class name icon */
+#icons.cd-icons .cd-icon-1 {
+  background-image: url("../src/assets/icons/icons8-fighter50.png");
+}
+#icons.cd-icons .cd-icon-2 {
+  background-image: url("../src/assets/icons/icons8-fighter-jet50.png");
+}
+#icons.cd-icons .cd-icon-3 {
+  background-image: url("../src/assets/icons/icons8-helicopter.png");
+}
+#icons.cd-icons .cd-icon-4 {
+  background-image: url("../src/assets/icons/icons8-missile.png");
+}
+#icons.cd-icons .cd-icon-5 {
+  background-image: url("../src/assets/icons/icons8-space-shuttle.png");
+}
+
+.fa-fighter-jet:before {
+  content: "";
+}
+
+.cd-icons li {
+  /* icons size */
+  height: 50px;
+  width: 50px;
+  color: #414042;
+  background-image: no-repeat center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.main,
+.preamble {
+  margin: 5vmin;
+  border-top: 0.25em solid #000000;
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  display: inline-grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: min-content;
+  grid-gap: 1vmin;
+}
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3,
+footer h3 {
+  padding: 0.5em 0.5em 0.5em 14vmin;
+  grid-column: 1/5;
+  grid-row: 1;
+  text-align: left;
+  font-size: 120%;
+  margin-top: 1em;
+  font-variant-caps: all-small-caps;
+}
+.preamble p,
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p,
+footer p {
+  grid-column: 2/7;
+  grid-row: auto;
+  margin-top: 1em;
+}
+
+.intro {
+  margin-top: 5rem;
+}
+
+#zen-supporting > footer {
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #43802a;
+  margin: 19px 0 0 0;
+  width: -webkit-fill-available;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#zen-supporting > footer a {
+  color: black;
+  padding: 10px;
+  justify-self: center;
+}
+#zen-supporting > footer .zen-validate-html {
+  content: url("../src/assets/icons/icons8-fighter50.png");
+}
+#zen-supporting > footer .zen-validate-css {
+  content: url("../src/assets/icons/icons8-fighter-jet50.png");
+}
+#zen-supporting > footer .zen-license {
+  content: url("../src/assets/icons/icons8-helicopter.png");
+}
+#zen-supporting > footer .zen-accessibility {
+  content: url("../src/assets/icons/icons8-missile.png");
+}
+#zen-supporting > footer .zen-github {
+  content: url("../src/assets/icons/icons8-space-shuttle.png");
+}
+
+body .sidebar {
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+aside .sidebar .wrapper {
+  display: inline-grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: min-content;
+  grid-gap: 1vmin;
+  grid-auto-flow: row;
+  margin: 10px 10px 70px 10px;
+  background-color: transparent;
+}
+aside .sidebar .wrapper div {
+  grid-column: span 2;
+  color: #000000;
+}
+aside .sidebar .wrapper div ul {
+  list-style: none;
+}
+aside .sidebar .wrapper div li {
+  margin-top: 5px;
+  text-decoration: none;
+  transition: font-size 1s;
+}
+aside .sidebar .wrapper div li a {
+  text-decoration: none;
+  color: #000000;
+}
+aside .sidebar .wrapper div li :hover {
+  font-size: large;
+  color: #00a3e0;
+}
+aside .sidebar .wrapper div h3 {
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-variant-caps: small-caps;
+}
+
+.next {
+  display: none;
+}
+.next #css-zen-garden::after {
+  background-image: url("../src/assets/images/Asset 1.png");
+  z-index: 105;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: 0;
+  width: 100%;
+}
+
+/* color palette - these colors will be the color swatches of the Colors section */
+/*/ Blue Pantone 294*/
+/*/ Dark Grey*/
+/*/ Off-white*/
+/*/ Black accent*/
+/*/ accent green*/
+/* Light Blue Pantone 299 */
+/* Light red Pantone 179 */
+* a,
+abbr {
+  color: #43802a;
+  text-shadow: 1px 1px 0.5px #000000;
+}
+* a:hover,
+abbr:hover {
+  color: #00a3e0;
+  text-shadow: 2px 2px 5px #f7f7f7;
+}
+* a:visited,
+abbr:visited {
+  color: #000000;
+}
+
+p {
+  color: #f7f7f7;
+  text-shadow: 1px 1px 10.5px #000000;
+  transition: font-size 1s;
+}
+p a:hover,
+p abbr:hover {
+  color: #00a3e0;
+  font-size: large;
+}
+
+body {
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+  color: #43802a;
+}
+
+h3 {
+  background-color: #000000;
+}
+
+/*Image variables */
+/* color palette - these colors will be the color swatches of the Colors section */
+/*/ Blue Pantone 294*/
+/*/ Dark Grey*/
+/*/ Off-white*/
+/*/ Black accent*/
+/*/ accent green*/
+/* Light Blue Pantone 299 */
+/* Light red Pantone 179 */
+* a,
+abbr {
+  color: #43802a;
+  text-shadow: 1px 1px 0.5px #000000;
+}
+* a:hover,
+abbr:hover {
+  color: #00a3e0;
+  text-shadow: 2px 2px 5px #f7f7f7;
+}
+* a:visited,
+abbr:visited {
+  color: #000000;
+}
+
+p {
+  color: #f7f7f7;
+  text-shadow: 1px 1px 10.5px #000000;
+  transition: font-size 1s;
+}
+p a:hover,
+p abbr:hover {
+  color: #00a3e0;
+  font-size: large;
+}
+
+body {
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+  color: #43802a;
+}
+
+h3 {
+  background-color: #000000;
+}
+
+#css-zen-garden::before {
+  content: url("../src/assets/images/ZenGarden-header.svg");
+  z-index: 105;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: 0;
+  width: 100%;
+}
+
+html::before {
+  content: url("../src/assets/images/zen_garden_page_wrapper-large.png");
+  z-index: -1;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  background: 0;
+  background-color: #414042;
+  padding: 4vmax 0 0 6vmax;
+}
+
+@media only screen and (min-width: 768px) {
+  html::before {
+    width: -webkit-fill-available;
+    padding: 8vmax 0 0 32vmax;
+  }
+}
+/* aeronautics graphics/icons*/
+/*fighterplane */
+/*/ fighter jet */
+/*/ helicopter*/
+/*/ missile */
+/*/ space shuttle */
+/* test */
+/* CSS class name icon */
+#icons.cd-icons .cd-icon-1 {
+  background-image: url("../src/assets/icons/icons8-fighter50.png");
+}
+#icons.cd-icons .cd-icon-2 {
+  background-image: url("../src/assets/icons/icons8-fighter-jet50.png");
+}
+#icons.cd-icons .cd-icon-3 {
+  background-image: url("../src/assets/icons/icons8-helicopter.png");
+}
+#icons.cd-icons .cd-icon-4 {
+  background-image: url("../src/assets/icons/icons8-missile.png");
+}
+#icons.cd-icons .cd-icon-5 {
+  background-image: url("../src/assets/icons/icons8-space-shuttle.png");
+}
+
+.fa-fighter-jet:before {
+  content: "";
+}
+
+.cd-icons li {
+  /* icons size */
+  height: 50px;
+  width: 50px;
+  color: #414042;
+  background-image: no-repeat center;
+}
+
+/* --------------------------------
+
+_Typography
+
+-------------------------------- */
+@font-face {
+  font-family: Roboto, Proza Libre;
+  src: url("https://fonts.googleapis.com/css?family=Proza+Libre|Roboto&display=swap") format("Roboto, Proza Libre");
+}
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 0.875em;
+}
+
+p {
+  font-family: "Proza Libre", sans-serif;
+}
+p a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#zen-intro > header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+#zen-intro > header h1 {
+  margin: 35px auto;
+  grid-column: 2/7;
+  font-size: 2.7rem;
+  text-align: center;
+  border-top: 4px solid black;
+}
+#zen-intro > header h2 {
+  grid-column: 2/6;
+  color: #000000;
+  padding-top: 1rem;
+}
+
+div.summary {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+p {
+  grid-column: 2/7;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro > header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0.02%;
+  }
+  .intro > header h1 {
+    grid-column: 8/12;
+    font-size: 3.5em;
+  }
+  .intro > header h2 {
+    grid-column: 8/12;
+    justify-items: start;
+  }
+
+  .summary > p {
+    grid-column: 2/12;
+    margin-right: 100px;
+  }
+}
+/* color palette - these colors will be the color swatches of the Colors section */
+/*/ Blue Pantone 294*/
+/*/ Dark Grey*/
+/*/ Off-white*/
+/*/ Black accent*/
+/*/ accent green*/
+/* Light Blue Pantone 299 */
+/* Light red Pantone 179 */
+* a,
+abbr {
+  color: #43802a;
+  text-shadow: 1px 1px 0.5px #000000;
+}
+* a:hover,
+abbr:hover {
+  color: #00a3e0;
+  text-shadow: 2px 2px 5px #f7f7f7;
+}
+* a:visited,
+abbr:visited {
+  color: #000000;
+}
+
+p {
+  color: #f7f7f7;
+  text-shadow: 1px 1px 10.5px #000000;
+  transition: font-size 1s;
+}
+p a:hover,
+p abbr:hover {
+  color: #00a3e0;
+  font-size: large;
+}
+
+body {
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+  color: #43802a;
+}
+
+h3 {
+  background-color: #000000;
+}
+
+/* aeronautics graphics/icons*/
+/*fighterplane */
+/*/ fighter jet */
+/*/ helicopter*/
+/*/ missile */
+/*/ space shuttle */
+/* test */
+/* CSS class name icon */
+#icons.cd-icons .cd-icon-1 {
+  background-image: url("../src/assets/icons/icons8-fighter50.png");
+}
+#icons.cd-icons .cd-icon-2 {
+  background-image: url("../src/assets/icons/icons8-fighter-jet50.png");
+}
+#icons.cd-icons .cd-icon-3 {
+  background-image: url("../src/assets/icons/icons8-helicopter.png");
+}
+#icons.cd-icons .cd-icon-4 {
+  background-image: url("../src/assets/icons/icons8-missile.png");
+}
+#icons.cd-icons .cd-icon-5 {
+  background-image: url("../src/assets/icons/icons8-space-shuttle.png");
+}
+
+.fa-fighter-jet:before {
+  content: "";
+}
+
+.cd-icons li {
+  /* icons size */
+  height: 50px;
+  width: 50px;
+  color: #414042;
+  background-image: no-repeat center;
+}
+
+@media only screen and (min-width: 550px) {
+  .intro {
+    margin-top: 10rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+    display: inline-grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3,
+footer h3 {
+    grid-column: 4/8;
+    height: fit-content;
+    text-align: right;
+    padding: 0.5em;
+    margin-right: 1em;
+  }
+  .preamble p,
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p,
+footer p {
+    grid-column: 8/13;
+  }
+
+  #zen-preamble > p:nth-child(2),
+.main > div > p:nth-child(2) {
+    border-top: 0.2em solid #43802a;
+    padding-top: 0.5em;
+  }
+
+  .intro {
+    margin-top: 6rem;
+  }
+
+  #zen-supporting > footer {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: min-content;
+  }
+  #zen-supporting > footer a.zen-validate-html, #zen-supporting > footer a.zen-validate-css {
+    grid-column: span 6;
+	width: 20%;
+  }
+  #zen-supporting > footer a.zen-license, #zen-supporting > footer a.zen-accessibility, #zen-supporting > footer a.zen-github {
+    grid-column: span 4;
+    width: 20%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

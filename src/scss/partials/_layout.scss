@@ -56,7 +56,6 @@ footer {
   a {
     color: black;
     padding: 10px;
-    height: 50px;
     justify-self: center;
   }
   .zen-validate-html {
@@ -75,12 +74,12 @@ footer {
     content: $icon-space-shuttle;
   }
 }
-<<<<<<< HEAD
+
 body .sidebar {
   margin-bottom: 20px;
   background-color: transparent;
 }
-aside.sidebar .wrapper {
+aside .sidebar .wrapper {
   display: inline-grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: min-content;
@@ -117,16 +116,18 @@ aside.sidebar .wrapper {
     }
   }
 }
+
 .next {
-  display: none;
-=======
-#css-zen-garden::after {
-  background-image: url('/src/assets/images/Asset 1.png');
-  z-index: 105;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: 0;
-  width: 100%;
->>>>>>> parent of 8cfbb99... background
+	display: none;
+
+	#css-zen-garden::after {
+	  background-image: url('../src/assets/images/Asset 1.png');
+	  z-index: 105;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  background: 0;
+	  width: 100%;
+
+	}
 }

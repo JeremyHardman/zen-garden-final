@@ -1,48 +1,48 @@
 /* aeronautics graphics/icons*/
 
-$icon-fighter50: url('/src/assets/icons/icons8-fighter50.png'); /*fighterplane */
-$icon-fighter-jet: url('/src/assets/icons/icons8-fighter-jet50.png'); /*/ fighter jet */
-$icon-helicopter: url('/src/assets/icons/icons8-helicopter.png'); /*/ helicopter*/
-$icon-missile: url('/src/assets/icons/icons8-missile.png'); /*/ missile */
-$icon-space-shuttle: url('/src/assets/icons/icons8-space-shuttle.png'); /*/ space shuttle */
+$icon-fighter50: url('../src/assets/icons/icons8-fighter50.png'); /*fighterplane */
+$icon-fighter-jet: url('../src/assets/icons/icons8-fighter-jet50.png'); /*/ fighter jet */
+$icon-helicopter: url('../src/assets/icons/icons8-helicopter.png'); /*/ helicopter*/
+$icon-missile: url('../src/assets/icons/icons8-missile.png'); /*/ missile */
+$icon-space-shuttle: url('../src/assets/icons/icons8-space-shuttle.png'); /*/ space shuttle */
 
 /* test */
 
-// /* CSS class name icon */
-// #icons.cd-icons {
-//   .cd-icon-1 {
-//     background-image: $icon-fighter50;
-//   }
+ /* CSS class name icon */
+ #icons.cd-icons {
+   .cd-icon-1 {
+     background-image: $icon-fighter50;
+   }
 
-//   .cd-icon-2 {
-//     background-image: $icon-fighter-jet;
-//   }
+   .cd-icon-2 {
+     background-image: $icon-fighter-jet;
+   }
 
-//   .cd-icon-3 {
-//     background-image: $icon-helicopter;
-//   }
+   .cd-icon-3 {
+     background-image: $icon-helicopter;
+   }
 
-//   .cd-icon-4 {
-//     background-image: $icon-missile;
-//   }
+   .cd-icon-4 {
+     background-image: $icon-missile;
+   }
 
-//   .cd-icon-5 {
-//     background-image: $icon-space-shuttle;
-//   }
-// }
+   .cd-icon-5 {
+     background-image: $icon-space-shuttle;
+   }
+ }
 
-// .fa-fighter-jet:before {
-//   content: '\f0fb';
-// }
+ .fa-fighter-jet:before {
+   content: '\f0fb';
+ }
 
 // // // find out how to use font awesome
 
 // // // link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-// .cd-icons li {
-//   /* icons size */
-//   height: 80px;
-//   width: 80px;
-//   color: $color-2;
-//   // background-image: no-repeat center;
-// }
+ .cd-icons li {
+   /* icons size */
+   height: 50px;
+   width: 50px;
+   color: $color-2;
+   background-image: no-repeat center;
+ }
