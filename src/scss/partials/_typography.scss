@@ -9,8 +9,8 @@ _Typography
   src: url('https://fonts.googleapis.com/css?family=Proza+Libre|Roboto&display=swap')
     format('Roboto, Proza Libre');
 }
-$primary-font: 'Roboto', sans-serif;
-$secondary-font: 'Proza Libre', sans-serif;
+$primary-font: 'Proza Libre', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
 
 $header1-size: 1.5em;
 $header2-size: 1.3em;
@@ -32,6 +32,7 @@ h2 {
 
 h3 {
   font-size: $header3-size;
+  text-transform: uppercase;
 }
 
 p {
