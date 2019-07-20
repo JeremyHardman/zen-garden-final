@@ -7,7 +7,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: transparent;
 }
 .main,
 .preamble {
@@ -30,7 +29,6 @@ footer {
     grid-column: 1 / 5;
     grid-row: 1;
     text-align: left;
-    font-size: 120%;
     margin-top: 1em;
     font-variant-caps: all-small-caps;
   }
@@ -75,6 +73,10 @@ footer {
   }
 }
 
+
+
+
+
 body .sidebar {
   margin-bottom: 20px;
   background-color: transparent;
@@ -118,6 +120,7 @@ aside .sidebar .wrapper {
 }
 
 .next {
+
 	display: none;
 
 	#css-zen-garden::after {
@@ -130,4 +133,18 @@ aside .sidebar .wrapper {
 	  width: 100%;
 
 	}
+
+  display: none;
+
+#css-zen-garden::after {
+  background-image: url('./assets/images/Asset 1.png');
+  z-index: 105;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: 0;
+  width: 100%;
+// >>>>>>> parent of 8cfbb99... background
+}
+
 }
