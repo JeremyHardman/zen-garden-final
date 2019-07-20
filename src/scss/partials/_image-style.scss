@@ -20,10 +20,11 @@
 }
 
 .page-wrapper {
-  display: grid;
+display: grid;
   background-image: url("../src/assets/images/clouds_small.jpg");
     /* Used if the image is unavailable */
     background-color: $color-2;
+    width:100%;
     // background-position: center; /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
