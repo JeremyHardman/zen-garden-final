@@ -89,7 +89,6 @@ h3 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: transparent;
 }
 
 .main,
@@ -119,7 +118,6 @@ footer h3 {
   grid-column: 1/5;
   grid-row: 1;
   text-align: left;
-  font-size: 120%;
   margin-top: 1em;
   font-variant-caps: all-small-caps;
 }
@@ -211,9 +209,19 @@ aside .sidebar .wrapper div h3 {
 
 .next {
   display: none;
+  display: none;
 }
 .next #css-zen-garden::after {
   background-image: url("../src/assets/images/Asset 1.png");
+  z-index: 105;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: 0;
+  width: 100%;
+}
+.next #css-zen-garden::after {
+  background-image: url("./assets/images/Asset 1.png");
   z-index: 105;
   position: fixed;
   top: 0;
@@ -321,6 +329,7 @@ h3 {
 
 #css-zen-garden::before {
   content: url("../src/assets/images/ZenGarden-header.svg");
+  content: url("../src/assets/images/ZenGarden-header.svg");
   z-index: 105;
   position: fixed;
   top: 0;
@@ -330,6 +339,7 @@ h3 {
 }
 
 html::before {
+  content: url("../src/assets/images/zen_garden_page_wrapper-large.png");
   content: url("../src/assets/images/zen_garden_page_wrapper-large.png");
   z-index: -1;
   position: fixed;
@@ -341,7 +351,23 @@ html::before {
 }
 
 @media only screen and (min-width: 768px) {
-  html::before {
+  html::before #css-zen-garden::before {
+    content: url("../src/assets/images/zen_garden_svg_banner_aimee.svg");
+    z-index: 105;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: 0;
+    width: 100%;
+  }
+  html::before html::before {
+    content: url("../src/assets/images/zen_garden_page_wrapper-large.png");
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: 0;
+    background-color: #414042;
     width: -webkit-fill-available;
     padding: 8vmax 0 0 32vmax;
   }
@@ -394,7 +420,7 @@ _Typography
 h1,
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Proza Libre", sans-serif;
 }
 
 h1 {
@@ -407,10 +433,11 @@ h2 {
 
 h3 {
   font-size: 0.875em;
+  text-transform: uppercase;
 }
 
 p {
-  font-family: "Proza Libre", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 p a {
   text-decoration: none;
@@ -549,7 +576,7 @@ h3 {
 
 @media only screen and (min-width: 550px) {
   .intro {
-    margin-top: 10rem;
+    margin-top: 17rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -599,7 +626,6 @@ footer p {
   }
   #zen-supporting > footer a.zen-validate-html, #zen-supporting > footer a.zen-validate-css {
     grid-column: span 6;
-	width: 20%;
   }
   #zen-supporting > footer a.zen-license, #zen-supporting > footer a.zen-accessibility, #zen-supporting > footer a.zen-github {
     grid-column: span 4;
