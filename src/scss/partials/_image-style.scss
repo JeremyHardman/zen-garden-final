@@ -1,34 +1,8 @@
 /*Image variables */
 @import '../partials/color-style.scss';
 
-//.cd-box {
-//  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-//  border: 1px solid $color-1;
-//  border-radius: 3px;
-//  background: $color-4;
-//  box-shadow: 0 1px 1px rgba(#000, 0.05);
-//  padding: 6px;
-//}
-// .page-wrapper > header {
-
-//   background-image: url('../src/assets/images/zen_garden_page_wrapper-mobile.jpg');
-
-//   background-image: url('../src/assets/images/zen_garden_page_wrapper-mobile.jpg');
-
-//   background-color: yellow;
-//   /* Used if the image is unavailable */
-
-//   // background-position: center; /* Center the image */
-//   background-repeat: no-repeat;
-//   /* Do not repeat the image */
-// }
-
 #css-zen-garden::before {
-
-  content: url('../src/assets/images/ZenGarden-header.svg');
-
-  content: url('../src/assets/images/ZenGarden-header.svg');
-
+  content: url('../src/assets/images/zen_garden_svg_banner_aimee.svg');
   z-index: 105;
   position: fixed;
   top: 0;
@@ -36,63 +10,36 @@
   background: 0;
   width: 100%;
 }
-html::before {
 
-  content: url('../src/assets/images/zen_garden_page_wrapper-large.png');
 
-  content: url('../src/assets/images/zen_garden_page_wrapper-large.png');
+@media only screen and (max-width:420px) {
 
-  z-index: -1;
-  position: fixed;
-  top: 0px;
-  right: 0;
-  background: 0;
-  background-color: #414042;
-  padding: 4vmax 0 0 6vmax;
+.body {
+  width: 70%;
+  background-color: black;
 }
 
-// top banner that is green and white
-
-@media only screen and (min-width: 768px) {
-
-  // #css-zen-garden::before {
-  //   content: url('../src/assets/images/ZenGarden-header.svg');
-  //   z-index: 105;
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   background: 0;
-  //   width: 100%;
-  // }
-  html::before {
-    // content: url('../src/assets/images/zen_garden_page_wrapper-large.png');
-    // z-index: -1;
-    // position: fixed;
-    // top: 0;
-    // right: 0;
-    // background: 0;
-    // background-color: $color-2;
-
-  #css-zen-garden::before {
-    content: url('../src/assets/images/zen_garden_svg_banner_aimee.svg');
-    z-index: 105;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: 0;
-    width: 100%;
-  }
-  html::before {
-    content: url('../src/assets/images/zen_garden_page_wrapper-large.png');
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background: 0;
+.page-wrapper {
+  display: grid;
+  background-image: url("../src/assets/images/clouds_small.jpg");
+    /* Used if the image is unavailable */
     background-color: $color-2;
-
-    width: -webkit-fill-available;
-    padding: 8vmax 0 0 32vmax;
-  }
+    // background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
 }
+}
+
+@media only screen and (min-width:421px){
+
+  .page-wrapper {
+  display: grid;
+  background-image: url("../src/assets/images/clouds_large3.jpg");
+    /* Used if the image is unavailable */
+    background-color: $color-2;
+    // background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+  }
+
 }
